@@ -1,0 +1,23 @@
+Êþº¾   1   com/mithra/Collections/App  java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this Lcom/mithra/Collections/App; main ([Ljava/lang/String;)V  !com/mithra/Collections/Collection
+  	
+    #org/apache/logging/log4j/LogManager   	getLogger 4(Ljava/lang/Class;)Lorg/apache/logging/log4j/Logger;  java/util/LinkedList
+  	
+    java/lang/Integer   ! valueOf (I)Ljava/lang/Integer; # % $ java/util/List & ' add (Ljava/lang/Object;)Z
+  ) * + addFirst (Ljava/lang/Object;)V
+  - . + addLast 0 java/util/Scanner	 2 4 3 java/lang/System 5 6 in Ljava/io/InputStream;
+ / 8  9 (Ljava/io/InputStream;)V	 2 ; < = out Ljava/io/PrintStream; ? 
+Menu for list operations:
+ A C B java/io/PrintStream D E println (Ljava/lang/String;)V G 1.Fetch an element I 2.Add an element K 3.Delete an element M 4.Display the list O 5.Exit Q Enter your choice:
+ / S T U nextInt ()I
+  W X Y fetch (Ljava/util/List;)V
+  [ \ Y append
+  ^ _ Y rem
+  a b Y print
+ 2 d e f exit (I)V h Enter a Valid choice or exit j l k org/apache/logging/log4j/Logger m E error
+ / o p  close args [Ljava/lang/String; ch I a #Lcom/mithra/Collections/Collection; log !Lorg/apache/logging/log4j/Logger; obj Ljava/util/List; sc Ljava/util/Scanner; LocalVariableTypeTable %Ljava/util/List<Ljava/lang/Integer;>; 
+SourceFile App.java !               /     *· ±    
+                 
+   	      %    ;» Y· M¸ N» Y· :¸ ¹ " W¸ ¹ " WÀ ¸ ¶ (¸ ¹ " W¸ ¹ " W¸ ¹ " W¸ ¹ " W¸ ¹ " W	¸ ¹ " WÀ 
+¸ ¶ ,» /Y² 1· 7:² :>¶ @² :F¶ @² :H¶ @² :J¶ @² :L¶ @² :N¶ @² :P¶ @¶ R<ª   I         !   *   3   <   E,¶ V§ *,¶ Z§ !,¶ ]§ ,¶ `§ ¸ c-g¹ i  ÿn¶ n±    
+   ‚            #  /  ;  G  S  `  m  z  ‡  ”     # ¨ $ ° % ¸ & À ' È ( Ð ) Ø * Þ ,  .	 / 0 1$ 2( 40 65 7: :    >   ; q r   Þ ] s t  3 u v  - w x  $ y z    › { |  }     $ y ~       €
